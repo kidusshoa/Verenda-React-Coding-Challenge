@@ -30,6 +30,7 @@ State Persistence:
 the board with the correct tasks and orders.
 <img width="979" alt="screenshot" src="![image](https://github.com/user-attachments/assets/79cabe51-8f63-416a-8e6b-28e9209cebb5)
 ">
+![Alt text]((https://github.com/user-attachments/assets/79cabe51-8f63-416a-8e6b-28e9209cebb5)
 
 
 ## Getting Started
