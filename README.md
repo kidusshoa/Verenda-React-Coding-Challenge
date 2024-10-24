@@ -14,18 +14,27 @@ GitHub repo ( Make sure it is a public repo )
 Coding challenge requirements:
 ​
 # Tech Stack:
+
 ● Develop the project using Next.js.
+
 ● Utilize tailwind CSS for styling.
-Project Management Page:
+
+# Project Management Page:
 ● Build a Trello-like board using the react-beautiful-dnd package.
 ​ Package Link: react-beautiful-dnd
+
 ● Three lanes on the board:
+
 ​ TODO
 ​ IN-PROGRESS
 ​ DONE
+
 ● Implement drag-and-drop functionality between lanes.
+
 ● Ability to add a new item/task in any lane.
-State Persistence:
+
+# State Persistence:
+
 ● Save the state of the board in local storage. Upon a page refresh, populate
 the board with the correct tasks and orders.
 
