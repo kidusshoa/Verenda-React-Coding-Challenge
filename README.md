@@ -28,8 +28,8 @@ Project Management Page:
 State Persistence:
 ● Save the state of the board in local storage. Upon a page refresh, populate
 the board with the correct tasks and orders.
-<img width="979" alt="screenshot" src="![image](https://github.com/user-attachments/assets/79cabe51-8f63-416a-8e6b-28e9209cebb5)
-">
+
+
 ![Alt text](https://i.pinimg.com/736x/8f/89/07/8f890706e2490866e6d64a840d984d69.jpg)
 
 
