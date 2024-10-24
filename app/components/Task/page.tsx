@@ -1,32 +1,28 @@
-import { useSortable } from "@dnd-kit/sortable";
-import { CSS } from "@dnd-kit/utilities";
+import { Draggable } from "react-beautiful-dnd";
 
 type TaskProps = {
-  id: number;
-  title: string;
+  task: {
+    id: string;
+    title: string;
+  };
+  index: number;
 };
 
-const Page = ({ id, title }: TaskProps) => {
-  const { attributes, listeners, setNodeRef, transform, transition } =
-    useSortable({ id });
-
-  const style = {
-    transition,
-    transform: CSS.Transform.toString(transform),
-  };
-
+const Task = ({ task, index }: TaskProps) => {
   return (
-    <div
-      ref={setNodeRef}
-      {...attributes}
-      {...listeners}
-      style={style}
-      className="bg-white rounded-sm shadow-[0px_1px_4px_rgba(0,0,0,0.16)] w-full p-5 flex items-center justify-start gap-5 touch-none"
-    >
-      <input type="checkbox" className="h-5 w-5" />
-      {title}
-    </div>
+    <Draggable draggableId={task.id} index={index}>
+      {(provided) => (
+        <div
+          ref={provided.innerRef}
+          {...provided.draggableProps}
+          {...provided.dragHandleProps}
+          className="bg-white rounded-sm shadow-[0px_1px_4px_rgba(0,0,0,0.16)] w-full p-5 flex items-center justify-start gap-5 touch-none"
+        >
+          {task.title}
+        </div>
+      )}
+    </Draggable>
   );
 };
 
-export default Page;
+export default Task;
